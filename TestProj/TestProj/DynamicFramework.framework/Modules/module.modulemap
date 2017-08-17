@@ -1,0 +1,6 @@
+framework module DynamicFramework {
+  umbrella header "DynamicFramework.h"
+
+  export *
+  module * { export * }
+}
