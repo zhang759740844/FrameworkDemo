@@ -1,0 +1,1829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B63A8EBA1F43EB320021ADEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B63A8EB91F43EB320021ADEB /* main.m */; };
+		B63A8EBD1F43EB320021ADEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B63A8EBC1F43EB320021ADEB /* AppDelegate.m */; };
+		B63A8EC01F43EB320021ADEB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63A8EBF1F43EB320021ADEB /* ViewController.m */; };
+		B63A8EC31F43EB320021ADEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63A8EC11F43EB320021ADEB /* Main.storyboard */; };
+		B63A8EC51F43EB320021ADEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63A8EC41F43EB320021ADEB /* Assets.xcassets */; };
+		B63A8EC81F43EB320021ADEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63A8EC61F43EB320021ADEB /* LaunchScreen.storyboard */; };
+		B63A8ED71F43EB750021ADEB /* StaticeLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = B63A8ED61F43EB750021ADEB /* StaticeLibrary.m */; };
+		B63A8ED81F43EB750021ADEB /* StaticeLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B63A8ED51F43EB750021ADEB /* StaticeLibrary.h */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B63A8EE21F43EDA50021ADEB /* PrintString.m in Sources */ = {isa = PBXBuildFile; fileRef = B63A8EE11F43EDA50021ADEB /* PrintString.m */; };
+		B63A8EEA1F43F1540021ADEB /* libStaticeLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B63A8ED31F43EB750021ADEB /* libStaticeLibrary.a */; };
+		B6A589B51F43F7EE00A57D95 /* StaticeLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = B63A8ED51F43EB750021ADEB /* StaticeLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6A589B61F43F7FA00A57D95 /* PrintString.h in Headers */ = {isa = PBXBuildFile; fileRef = B63A8EE01F43EDA50021ADEB /* PrintString.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B6A589D91F44003500A57D95 /* DynamicFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A589D21F44003500A57D95 /* DynamicFramework.framework */; };
+		B6A589DA1F44003500A57D95 /* DynamicFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6A589D21F44003500A57D95 /* DynamicFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6A589E11F44006B00A57D95 /* DFPrintString.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A589DF1F44006B00A57D95 /* DFPrintString.m */; };
+		B6A589E71F44010F00A57D95 /* PublicDFPrintString.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A589E51F44010F00A57D95 /* PublicDFPrintString.m */; };
+		B6A589F81F44056C00A57D95 /* DynamicFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = B6A589D41F44003500A57D95 /* DynamicFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6A589F91F44063E00A57D95 /* PublicDFPrintString.h in Headers */ = {isa = PBXBuildFile; fileRef = B6A589E41F44010E00A57D95 /* PublicDFPrintString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6A589FE1F44068C00A57D95 /* DFPrintString.h in Headers */ = {isa = PBXBuildFile; fileRef = B6A589DE1F44006B00A57D95 /* DFPrintString.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B6A58A0C1F440BE000A57D95 /* StaticFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = B6A58A0A1F440BE000A57D95 /* StaticFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6A58A0F1F440BE000A57D95 /* StaticFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A58A081F440BE000A57D95 /* StaticFramework.framework */; };
+		B6A58A101F440BE000A57D95 /* StaticFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6A58A081F440BE000A57D95 /* StaticFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6A58A281F440D8300A57D95 /* author.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A58A271F440D8300A57D95 /* author.png */; };
+		B6A58A341F441C9400A57D95 /* DynamicWithStatic.h in Headers */ = {isa = PBXBuildFile; fileRef = B6A58A321F441C9400A57D95 /* DynamicWithStatic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6A58A371F441C9400A57D95 /* DynamicWithStatic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A58A301F441C9400A57D95 /* DynamicWithStatic.framework */; };
+		B6A58A381F441C9400A57D95 /* DynamicWithStatic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6A58A301F441C9400A57D95 /* DynamicWithStatic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6D1B0E11F4453A400D402C3 /* StaticSVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D1B0DF1F4453A400D402C3 /* StaticSVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6D1B0E41F4453A400D402C3 /* StaticSVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D1B0DD1F4453A400D402C3 /* StaticSVProgressHUD.framework */; };
+		B6D1B0E51F4453A400D402C3 /* StaticSVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6D1B0DD1F4453A400D402C3 /* StaticSVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6D1B0F11F44543600D402C3 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D1B0E91F44543600D402C3 /* SVIndefiniteAnimatedView.h */; };
+		B6D1B0F21F44543600D402C3 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D1B0EA1F44543600D402C3 /* SVIndefiniteAnimatedView.m */; };
+		B6D1B0F31F44543600D402C3 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D1B0EB1F44543600D402C3 /* SVProgressAnimatedView.h */; };
+		B6D1B0F41F44543600D402C3 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D1B0EC1F44543600D402C3 /* SVProgressAnimatedView.m */; };
+		B6D1B0F51F44543600D402C3 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D1B0ED1F44543600D402C3 /* SVProgressHUD.h */; };
+		B6D1B0F61F44543600D402C3 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D1B0EE1F44543600D402C3 /* SVProgressHUD.m */; };
+		B6D1B0F71F44543600D402C3 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D1B0EF1F44543600D402C3 /* SVRadialGradientLayer.h */; };
+		B6D1B0F81F44543600D402C3 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D1B0F01F44543600D402C3 /* SVRadialGradientLayer.m */; };
+		B6D1B0FA1F44543E00D402C3 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6D1B0F91F44543E00D402C3 /* SVProgressHUD.bundle */; };
+		B6D1B0FD1F4454A700D402C3 /* SSShowPic.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D1B0FB1F4454A700D402C3 /* SSShowPic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6D1B0FE1F4454A700D402C3 /* SSShowPic.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D1B0FC1F4454A700D402C3 /* SSShowPic.m */; };
+		B6D1B1181F44592400D402C3 /* DynamicSVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D1B1161F44592400D402C3 /* DynamicSVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6D1B11B1F44592400D402C3 /* DynamicSVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D1B1141F44592400D402C3 /* DynamicSVProgressHUD.framework */; };
+		B6D1B11C1F44592400D402C3 /* DynamicSVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6D1B1141F44592400D402C3 /* DynamicSVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6D1B1281F44599A00D402C3 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D1B1201F44599A00D402C3 /* SVIndefiniteAnimatedView.h */; };
+		B6D1B1291F44599A00D402C3 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D1B1211F44599A00D402C3 /* SVIndefiniteAnimatedView.m */; };
+		B6D1B12A1F44599A00D402C3 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D1B1221F44599A00D402C3 /* SVProgressAnimatedView.h */; };
+		B6D1B12B1F44599A00D402C3 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D1B1231F44599A00D402C3 /* SVProgressAnimatedView.m */; };
+		B6D1B12C1F44599A00D402C3 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D1B1241F44599A00D402C3 /* SVProgressHUD.h */; };
+		B6D1B12D1F44599A00D402C3 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D1B1251F44599A00D402C3 /* SVProgressHUD.m */; };
+		B6D1B12E1F44599A00D402C3 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D1B1261F44599A00D402C3 /* SVRadialGradientLayer.h */; };
+		B6D1B12F1F44599A00D402C3 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D1B1271F44599A00D402C3 /* SVRadialGradientLayer.m */; };
+		B6D1B1311F44599F00D402C3 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6D1B1301F44599F00D402C3 /* SVProgressHUD.bundle */; };
+		B6D1B1341F4459BD00D402C3 /* DSShowPic.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D1B1321F4459BD00D402C3 /* DSShowPic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6D1B1351F4459BD00D402C3 /* DSShowPic.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D1B1331F4459BD00D402C3 /* DSShowPic.m */; };
+		B6D1B13A1F445B1200D402C3 /* DWSShowPic.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D1B1381F445B1200D402C3 /* DWSShowPic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6D1B13B1F445B1200D402C3 /* DWSShowPic.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D1B1391F445B1200D402C3 /* DWSShowPic.m */; };
+		B6D1B13C1F445B5400D402C3 /* StaticSVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D1B0DD1F4453A400D402C3 /* StaticSVProgressHUD.framework */; };
+		B6D1B1661F445F1900D402C3 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6D1B1651F445F1900D402C3 /* SVProgressHUD.bundle */; };
+		B6D1B1741F4464F000D402C3 /* DynamicWithDynamic.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D1B1721F4464F000D402C3 /* DynamicWithDynamic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6D1B1771F4464F000D402C3 /* DynamicWithDynamic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D1B1701F4464F000D402C3 /* DynamicWithDynamic.framework */; };
+		B6D1B1781F4464F000D402C3 /* DynamicWithDynamic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6D1B1701F4464F000D402C3 /* DynamicWithDynamic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6D1B17C1F44650C00D402C3 /* DynamicSVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D1B1141F44592400D402C3 /* DynamicSVProgressHUD.framework */; };
+		B6D1B17F1F44653100D402C3 /* DWDShowPic.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D1B17D1F44653100D402C3 /* DWDShowPic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6D1B1801F44653100D402C3 /* DWDShowPic.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D1B17E1F44653100D402C3 /* DWDShowPic.m */; };
+		B6D1B1D41F454E8A00D402C3 /* StaticWithStatic.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D1B1D21F454E8A00D402C3 /* StaticWithStatic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6D1B1D71F454E8A00D402C3 /* StaticWithStatic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D1B1D01F454E8A00D402C3 /* StaticWithStatic.framework */; };
+		B6D1B1D81F454E8A00D402C3 /* StaticWithStatic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6D1B1D01F454E8A00D402C3 /* StaticWithStatic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6D1B1DC1F454EAA00D402C3 /* StaticSVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D1B0DD1F4453A400D402C3 /* StaticSVProgressHUD.framework */; };
+		B6D1B1DF1F454EC700D402C3 /* SWSShowPic.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D1B1DD1F454EC700D402C3 /* SWSShowPic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6D1B1E01F454EC700D402C3 /* SWSShowPic.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D1B1DE1F454EC700D402C3 /* SWSShowPic.m */; };
+		B6D1B2131F4570EB00D402C3 /* StaticWithDynamic.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D1B2111F4570EB00D402C3 /* StaticWithDynamic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6D1B2161F4570EB00D402C3 /* StaticWithDynamic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D1B20F1F4570EB00D402C3 /* StaticWithDynamic.framework */; };
+		B6D1B2171F4570EB00D402C3 /* StaticWithDynamic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6D1B20F1F4570EB00D402C3 /* StaticWithDynamic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6D1B21E1F4572AC00D402C3 /* SWDShowPic.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D1B21C1F4572AC00D402C3 /* SWDShowPic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6D1B21F1F4572AC00D402C3 /* SWDShowPic.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D1B21D1F4572AC00D402C3 /* SWDShowPic.m */; };
+		B6D1B2431F45765300D402C3 /* DynamicSVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D1B1141F44592400D402C3 /* DynamicSVProgressHUD.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B63A8EE81F43F1420021ADEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B63A8EAD1F43EB320021ADEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B63A8ED21F43EB750021ADEB;
+			remoteInfo = StaticeLibrary;
+		};
+		B6A589D71F44003500A57D95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B63A8EAD1F43EB320021ADEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6A589D11F44003500A57D95;
+			remoteInfo = DynamicFramework;
+		};
+		B6A58A0D1F440BE000A57D95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B63A8EAD1F43EB320021ADEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6A58A071F440BE000A57D95;
+			remoteInfo = StaticFramework;
+		};
+		B6A58A351F441C9400A57D95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B63A8EAD1F43EB320021ADEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6A58A2F1F441C9400A57D95;
+			remoteInfo = DynamicWithStatic;
+		};
+		B6D1B0E21F4453A400D402C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B63A8EAD1F43EB320021ADEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D1B0DC1F4453A400D402C3;
+			remoteInfo = StaticSVProgressHUD;
+		};
+		B6D1B1191F44592400D402C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B63A8EAD1F43EB320021ADEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D1B1131F44592400D402C3;
+			remoteInfo = DynamicSVProgressHUD;
+		};
+		B6D1B1751F4464F000D402C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B63A8EAD1F43EB320021ADEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D1B16F1F4464F000D402C3;
+			remoteInfo = DynamicWithDynamic;
+		};
+		B6D1B1D51F454E8A00D402C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B63A8EAD1F43EB320021ADEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D1B1CF1F454E8A00D402C3;
+			remoteInfo = StaticWithStatic;
+		};
+		B6D1B2141F4570EB00D402C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B63A8EAD1F43EB320021ADEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D1B20E1F4570EB00D402C3;
+			remoteInfo = StaticWithDynamic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B63A8ED11F43EB750021ADEB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				B63A8ED81F43EB750021ADEB /* StaticeLibrary.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A589CC1F43FFA500A57D95 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B6D1B2171F4570EB00D402C3 /* StaticWithDynamic.framework in Embed Frameworks */,
+				B6D1B1781F4464F000D402C3 /* DynamicWithDynamic.framework in Embed Frameworks */,
+				B6D1B11C1F44592400D402C3 /* DynamicSVProgressHUD.framework in Embed Frameworks */,
+				B6D1B1D81F454E8A00D402C3 /* StaticWithStatic.framework in Embed Frameworks */,
+				B6D1B0E51F4453A400D402C3 /* StaticSVProgressHUD.framework in Embed Frameworks */,
+				B6A589DA1F44003500A57D95 /* DynamicFramework.framework in Embed Frameworks */,
+				B6A58A101F440BE000A57D95 /* StaticFramework.framework in Embed Frameworks */,
+				B6A58A381F441C9400A57D95 /* DynamicWithStatic.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B63A8EB51F43EB320021ADEB /* FrameworkDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameworkDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B63A8EB91F43EB320021ADEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B63A8EBB1F43EB320021ADEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B63A8EBC1F43EB320021ADEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B63A8EBE1F43EB320021ADEB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B63A8EBF1F43EB320021ADEB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B63A8EC21F43EB320021ADEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B63A8EC41F43EB320021ADEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B63A8EC71F43EB320021ADEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B63A8EC91F43EB320021ADEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B63A8ED31F43EB750021ADEB /* libStaticeLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStaticeLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B63A8ED51F43EB750021ADEB /* StaticeLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticeLibrary.h; sourceTree = "<group>"; };
+		B63A8ED61F43EB750021ADEB /* StaticeLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticeLibrary.m; sourceTree = "<group>"; };
+		B63A8EE01F43EDA50021ADEB /* PrintString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintString.h; sourceTree = "<group>"; };
+		B63A8EE11F43EDA50021ADEB /* PrintString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintString.m; sourceTree = "<group>"; };
+		B6A589D21F44003500A57D95 /* DynamicFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynamicFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6A589D41F44003500A57D95 /* DynamicFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicFramework.h; sourceTree = "<group>"; };
+		B6A589D51F44003500A57D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6A589DE1F44006B00A57D95 /* DFPrintString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFPrintString.h; sourceTree = "<group>"; };
+		B6A589DF1F44006B00A57D95 /* DFPrintString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFPrintString.m; sourceTree = "<group>"; };
+		B6A589E41F44010E00A57D95 /* PublicDFPrintString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicDFPrintString.h; sourceTree = "<group>"; };
+		B6A589E51F44010F00A57D95 /* PublicDFPrintString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicDFPrintString.m; sourceTree = "<group>"; };
+		B6A58A081F440BE000A57D95 /* StaticFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StaticFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6A58A0A1F440BE000A57D95 /* StaticFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticFramework.h; sourceTree = "<group>"; };
+		B6A58A0B1F440BE000A57D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6A58A211F440D5800A57D95 /* NewBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6A58A231F440D5800A57D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6A58A271F440D8300A57D95 /* author.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = author.png; sourceTree = "<group>"; };
+		B6A58A301F441C9400A57D95 /* DynamicWithStatic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynamicWithStatic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6A58A321F441C9400A57D95 /* DynamicWithStatic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicWithStatic.h; sourceTree = "<group>"; };
+		B6A58A331F441C9400A57D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D1B0DD1F4453A400D402C3 /* StaticSVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StaticSVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D1B0DF1F4453A400D402C3 /* StaticSVProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticSVProgressHUD.h; sourceTree = "<group>"; };
+		B6D1B0E01F4453A400D402C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D1B0E91F44543600D402C3 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		B6D1B0EA1F44543600D402C3 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		B6D1B0EB1F44543600D402C3 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		B6D1B0EC1F44543600D402C3 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		B6D1B0ED1F44543600D402C3 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		B6D1B0EE1F44543600D402C3 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		B6D1B0EF1F44543600D402C3 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		B6D1B0F01F44543600D402C3 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		B6D1B0F91F44543E00D402C3 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		B6D1B0FB1F4454A700D402C3 /* SSShowPic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSShowPic.h; sourceTree = "<group>"; };
+		B6D1B0FC1F4454A700D402C3 /* SSShowPic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSShowPic.m; sourceTree = "<group>"; };
+		B6D1B1141F44592400D402C3 /* DynamicSVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynamicSVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D1B1161F44592400D402C3 /* DynamicSVProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicSVProgressHUD.h; sourceTree = "<group>"; };
+		B6D1B1171F44592400D402C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D1B1201F44599A00D402C3 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		B6D1B1211F44599A00D402C3 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		B6D1B1221F44599A00D402C3 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		B6D1B1231F44599A00D402C3 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		B6D1B1241F44599A00D402C3 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		B6D1B1251F44599A00D402C3 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		B6D1B1261F44599A00D402C3 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		B6D1B1271F44599A00D402C3 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		B6D1B1301F44599F00D402C3 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		B6D1B1321F4459BD00D402C3 /* DSShowPic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSShowPic.h; sourceTree = "<group>"; };
+		B6D1B1331F4459BD00D402C3 /* DSShowPic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSShowPic.m; sourceTree = "<group>"; };
+		B6D1B1381F445B1200D402C3 /* DWSShowPic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWSShowPic.h; sourceTree = "<group>"; };
+		B6D1B1391F445B1200D402C3 /* DWSShowPic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWSShowPic.m; sourceTree = "<group>"; };
+		B6D1B1651F445F1900D402C3 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		B6D1B1701F4464F000D402C3 /* DynamicWithDynamic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynamicWithDynamic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D1B1721F4464F000D402C3 /* DynamicWithDynamic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicWithDynamic.h; sourceTree = "<group>"; };
+		B6D1B1731F4464F000D402C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D1B17D1F44653100D402C3 /* DWDShowPic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWDShowPic.h; sourceTree = "<group>"; };
+		B6D1B17E1F44653100D402C3 /* DWDShowPic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWDShowPic.m; sourceTree = "<group>"; };
+		B6D1B1D01F454E8A00D402C3 /* StaticWithStatic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StaticWithStatic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D1B1D21F454E8A00D402C3 /* StaticWithStatic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticWithStatic.h; sourceTree = "<group>"; };
+		B6D1B1D31F454E8A00D402C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D1B1DD1F454EC700D402C3 /* SWSShowPic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWSShowPic.h; sourceTree = "<group>"; };
+		B6D1B1DE1F454EC700D402C3 /* SWSShowPic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWSShowPic.m; sourceTree = "<group>"; };
+		B6D1B20F1F4570EB00D402C3 /* StaticWithDynamic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StaticWithDynamic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D1B2111F4570EB00D402C3 /* StaticWithDynamic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticWithDynamic.h; sourceTree = "<group>"; };
+		B6D1B2121F4570EB00D402C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D1B21C1F4572AC00D402C3 /* SWDShowPic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWDShowPic.h; sourceTree = "<group>"; };
+		B6D1B21D1F4572AC00D402C3 /* SWDShowPic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWDShowPic.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B63A8EB21F43EB320021ADEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D1B2161F4570EB00D402C3 /* StaticWithDynamic.framework in Frameworks */,
+				B6A58A371F441C9400A57D95 /* DynamicWithStatic.framework in Frameworks */,
+				B6D1B1771F4464F000D402C3 /* DynamicWithDynamic.framework in Frameworks */,
+				B6D1B1D71F454E8A00D402C3 /* StaticWithStatic.framework in Frameworks */,
+				B63A8EEA1F43F1540021ADEB /* libStaticeLibrary.a in Frameworks */,
+				B6D1B11B1F44592400D402C3 /* DynamicSVProgressHUD.framework in Frameworks */,
+				B6D1B0E41F4453A400D402C3 /* StaticSVProgressHUD.framework in Frameworks */,
+				B6A58A0F1F440BE000A57D95 /* StaticFramework.framework in Frameworks */,
+				B6A589D91F44003500A57D95 /* DynamicFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B63A8ED01F43EB750021ADEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A589CE1F44003500A57D95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A58A041F440BE000A57D95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A58A1E1F440D5800A57D95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A58A2C1F441C9400A57D95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D1B13C1F445B5400D402C3 /* StaticSVProgressHUD.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D1B0D91F4453A400D402C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D1B1101F44592400D402C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D1B16C1F4464F000D402C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D1B17C1F44650C00D402C3 /* DynamicSVProgressHUD.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D1B1CC1F454E8A00D402C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D1B1DC1F454EAA00D402C3 /* StaticSVProgressHUD.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D1B20B1F4570EB00D402C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D1B2431F45765300D402C3 /* DynamicSVProgressHUD.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B63A8EAC1F43EB320021ADEB = {
+			isa = PBXGroup;
+			children = (
+				B63A8EB71F43EB320021ADEB /* FrameworkDemos */,
+				B63A8ED41F43EB750021ADEB /* StaticeLibrary */,
+				B6A589D31F44003500A57D95 /* DynamicFramework */,
+				B6A58A091F440BE000A57D95 /* StaticFramework */,
+				B6A58A221F440D5800A57D95 /* NewBundle */,
+				B6D1B0DE1F4453A400D402C3 /* StaticSVProgressHUD */,
+				B6D1B1151F44592400D402C3 /* DynamicSVProgressHUD */,
+				B6A58A311F441C9400A57D95 /* DynamicWithStatic */,
+				B6D1B1711F4464F000D402C3 /* DynamicWithDynamic */,
+				B6D1B1D11F454E8A00D402C3 /* StaticWithStatic */,
+				B6D1B2101F4570EB00D402C3 /* StaticWithDynamic */,
+				B63A8EB61F43EB320021ADEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B63A8EB61F43EB320021ADEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B63A8EB51F43EB320021ADEB /* FrameworkDemos.app */,
+				B63A8ED31F43EB750021ADEB /* libStaticeLibrary.a */,
+				B6A589D21F44003500A57D95 /* DynamicFramework.framework */,
+				B6A58A081F440BE000A57D95 /* StaticFramework.framework */,
+				B6A58A211F440D5800A57D95 /* NewBundle.bundle */,
+				B6A58A301F441C9400A57D95 /* DynamicWithStatic.framework */,
+				B6D1B0DD1F4453A400D402C3 /* StaticSVProgressHUD.framework */,
+				B6D1B1141F44592400D402C3 /* DynamicSVProgressHUD.framework */,
+				B6D1B1701F4464F000D402C3 /* DynamicWithDynamic.framework */,
+				B6D1B1D01F454E8A00D402C3 /* StaticWithStatic.framework */,
+				B6D1B20F1F4570EB00D402C3 /* StaticWithDynamic.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B63A8EB71F43EB320021ADEB /* FrameworkDemos */ = {
+			isa = PBXGroup;
+			children = (
+				B63A8EBB1F43EB320021ADEB /* AppDelegate.h */,
+				B63A8EBC1F43EB320021ADEB /* AppDelegate.m */,
+				B63A8EBE1F43EB320021ADEB /* ViewController.h */,
+				B63A8EBF1F43EB320021ADEB /* ViewController.m */,
+				B63A8EC11F43EB320021ADEB /* Main.storyboard */,
+				B63A8EC41F43EB320021ADEB /* Assets.xcassets */,
+				B63A8EC61F43EB320021ADEB /* LaunchScreen.storyboard */,
+				B63A8EC91F43EB320021ADEB /* Info.plist */,
+				B63A8EB81F43EB320021ADEB /* Supporting Files */,
+			);
+			path = FrameworkDemos;
+			sourceTree = "<group>";
+		};
+		B63A8EB81F43EB320021ADEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B63A8EB91F43EB320021ADEB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B63A8ED41F43EB750021ADEB /* StaticeLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				B63A8ED51F43EB750021ADEB /* StaticeLibrary.h */,
+				B63A8EE01F43EDA50021ADEB /* PrintString.h */,
+				B63A8EE11F43EDA50021ADEB /* PrintString.m */,
+				B63A8ED61F43EB750021ADEB /* StaticeLibrary.m */,
+			);
+			path = StaticeLibrary;
+			sourceTree = "<group>";
+		};
+		B6A589D31F44003500A57D95 /* DynamicFramework */ = {
+			isa = PBXGroup;
+			children = (
+				B6A589D41F44003500A57D95 /* DynamicFramework.h */,
+				B6A589D51F44003500A57D95 /* Info.plist */,
+				B6A589DE1F44006B00A57D95 /* DFPrintString.h */,
+				B6A589DF1F44006B00A57D95 /* DFPrintString.m */,
+				B6A589E41F44010E00A57D95 /* PublicDFPrintString.h */,
+				B6A589E51F44010F00A57D95 /* PublicDFPrintString.m */,
+			);
+			path = DynamicFramework;
+			sourceTree = "<group>";
+		};
+		B6A58A091F440BE000A57D95 /* StaticFramework */ = {
+			isa = PBXGroup;
+			children = (
+				B6A58A0A1F440BE000A57D95 /* StaticFramework.h */,
+				B6A58A0B1F440BE000A57D95 /* Info.plist */,
+			);
+			path = StaticFramework;
+			sourceTree = "<group>";
+		};
+		B6A58A221F440D5800A57D95 /* NewBundle */ = {
+			isa = PBXGroup;
+			children = (
+				B6A58A271F440D8300A57D95 /* author.png */,
+				B6A58A231F440D5800A57D95 /* Info.plist */,
+			);
+			path = NewBundle;
+			sourceTree = "<group>";
+		};
+		B6A58A311F441C9400A57D95 /* DynamicWithStatic */ = {
+			isa = PBXGroup;
+			children = (
+				B6D1B1651F445F1900D402C3 /* SVProgressHUD.bundle */,
+				B6A58A321F441C9400A57D95 /* DynamicWithStatic.h */,
+				B6A58A331F441C9400A57D95 /* Info.plist */,
+				B6D1B1381F445B1200D402C3 /* DWSShowPic.h */,
+				B6D1B1391F445B1200D402C3 /* DWSShowPic.m */,
+			);
+			path = DynamicWithStatic;
+			sourceTree = "<group>";
+		};
+		B6D1B0DE1F4453A400D402C3 /* StaticSVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				B6D1B1361F445A4C00D402C3 /* SVProgressHUD */,
+				B6D1B0DF1F4453A400D402C3 /* StaticSVProgressHUD.h */,
+				B6D1B0E01F4453A400D402C3 /* Info.plist */,
+				B6D1B0FB1F4454A700D402C3 /* SSShowPic.h */,
+				B6D1B0FC1F4454A700D402C3 /* SSShowPic.m */,
+			);
+			path = StaticSVProgressHUD;
+			sourceTree = "<group>";
+		};
+		B6D1B1151F44592400D402C3 /* DynamicSVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				B6D1B1371F445A5B00D402C3 /* SVProgressHUD */,
+				B6D1B1171F44592400D402C3 /* Info.plist */,
+				B6D1B1161F44592400D402C3 /* DynamicSVProgressHUD.h */,
+				B6D1B1321F4459BD00D402C3 /* DSShowPic.h */,
+				B6D1B1331F4459BD00D402C3 /* DSShowPic.m */,
+			);
+			path = DynamicSVProgressHUD;
+			sourceTree = "<group>";
+		};
+		B6D1B1361F445A4C00D402C3 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				B6D1B0E91F44543600D402C3 /* SVIndefiniteAnimatedView.h */,
+				B6D1B0F91F44543E00D402C3 /* SVProgressHUD.bundle */,
+				B6D1B0EA1F44543600D402C3 /* SVIndefiniteAnimatedView.m */,
+				B6D1B0EB1F44543600D402C3 /* SVProgressAnimatedView.h */,
+				B6D1B0EC1F44543600D402C3 /* SVProgressAnimatedView.m */,
+				B6D1B0ED1F44543600D402C3 /* SVProgressHUD.h */,
+				B6D1B0EE1F44543600D402C3 /* SVProgressHUD.m */,
+				B6D1B0EF1F44543600D402C3 /* SVRadialGradientLayer.h */,
+				B6D1B0F01F44543600D402C3 /* SVRadialGradientLayer.m */,
+			);
+			name = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		B6D1B1371F445A5B00D402C3 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				B6D1B1301F44599F00D402C3 /* SVProgressHUD.bundle */,
+				B6D1B1201F44599A00D402C3 /* SVIndefiniteAnimatedView.h */,
+				B6D1B1211F44599A00D402C3 /* SVIndefiniteAnimatedView.m */,
+				B6D1B1221F44599A00D402C3 /* SVProgressAnimatedView.h */,
+				B6D1B1231F44599A00D402C3 /* SVProgressAnimatedView.m */,
+				B6D1B1241F44599A00D402C3 /* SVProgressHUD.h */,
+				B6D1B1251F44599A00D402C3 /* SVProgressHUD.m */,
+				B6D1B1261F44599A00D402C3 /* SVRadialGradientLayer.h */,
+				B6D1B1271F44599A00D402C3 /* SVRadialGradientLayer.m */,
+			);
+			name = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		B6D1B1711F4464F000D402C3 /* DynamicWithDynamic */ = {
+			isa = PBXGroup;
+			children = (
+				B6D1B1721F4464F000D402C3 /* DynamicWithDynamic.h */,
+				B6D1B1731F4464F000D402C3 /* Info.plist */,
+				B6D1B17D1F44653100D402C3 /* DWDShowPic.h */,
+				B6D1B17E1F44653100D402C3 /* DWDShowPic.m */,
+			);
+			path = DynamicWithDynamic;
+			sourceTree = "<group>";
+		};
+		B6D1B1D11F454E8A00D402C3 /* StaticWithStatic */ = {
+			isa = PBXGroup;
+			children = (
+				B6D1B1D21F454E8A00D402C3 /* StaticWithStatic.h */,
+				B6D1B1D31F454E8A00D402C3 /* Info.plist */,
+				B6D1B1DD1F454EC700D402C3 /* SWSShowPic.h */,
+				B6D1B1DE1F454EC700D402C3 /* SWSShowPic.m */,
+			);
+			path = StaticWithStatic;
+			sourceTree = "<group>";
+		};
+		B6D1B2101F4570EB00D402C3 /* StaticWithDynamic */ = {
+			isa = PBXGroup;
+			children = (
+				B6D1B2111F4570EB00D402C3 /* StaticWithDynamic.h */,
+				B6D1B2121F4570EB00D402C3 /* Info.plist */,
+				B6D1B21C1F4572AC00D402C3 /* SWDShowPic.h */,
+				B6D1B21D1F4572AC00D402C3 /* SWDShowPic.m */,
+			);
+			path = StaticWithDynamic;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B63A8EE31F43EDF10021ADEB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A589B51F43F7EE00A57D95 /* StaticeLibrary.h in Headers */,
+				B6A589B61F43F7FA00A57D95 /* PrintString.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A589F71F44056500A57D95 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A589F81F44056C00A57D95 /* DynamicFramework.h in Headers */,
+				B6A589F91F44063E00A57D95 /* PublicDFPrintString.h in Headers */,
+				B6A589FE1F44068C00A57D95 /* DFPrintString.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A58A051F440BE000A57D95 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A58A0C1F440BE000A57D95 /* StaticFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A58A2D1F441C9400A57D95 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A58A341F441C9400A57D95 /* DynamicWithStatic.h in Headers */,
+				B6D1B13A1F445B1200D402C3 /* DWSShowPic.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D1B0DA1F4453A400D402C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D1B0F51F44543600D402C3 /* SVProgressHUD.h in Headers */,
+				B6D1B0FD1F4454A700D402C3 /* SSShowPic.h in Headers */,
+				B6D1B0F11F44543600D402C3 /* SVIndefiniteAnimatedView.h in Headers */,
+				B6D1B0F31F44543600D402C3 /* SVProgressAnimatedView.h in Headers */,
+				B6D1B0E11F4453A400D402C3 /* StaticSVProgressHUD.h in Headers */,
+				B6D1B0F71F44543600D402C3 /* SVRadialGradientLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D1B1111F44592400D402C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D1B12C1F44599A00D402C3 /* SVProgressHUD.h in Headers */,
+				B6D1B1341F4459BD00D402C3 /* DSShowPic.h in Headers */,
+				B6D1B1281F44599A00D402C3 /* SVIndefiniteAnimatedView.h in Headers */,
+				B6D1B12A1F44599A00D402C3 /* SVProgressAnimatedView.h in Headers */,
+				B6D1B1181F44592400D402C3 /* DynamicSVProgressHUD.h in Headers */,
+				B6D1B12E1F44599A00D402C3 /* SVRadialGradientLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D1B16D1F4464F000D402C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D1B17F1F44653100D402C3 /* DWDShowPic.h in Headers */,
+				B6D1B1741F4464F000D402C3 /* DynamicWithDynamic.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D1B1CD1F454E8A00D402C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D1B1DF1F454EC700D402C3 /* SWSShowPic.h in Headers */,
+				B6D1B1D41F454E8A00D402C3 /* StaticWithStatic.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D1B20C1F4570EB00D402C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D1B2131F4570EB00D402C3 /* StaticWithDynamic.h in Headers */,
+				B6D1B21E1F4572AC00D402C3 /* SWDShowPic.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B63A8EB41F43EB320021ADEB /* FrameworkDemos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B63A8ECC1F43EB320021ADEB /* Build configuration list for PBXNativeTarget "FrameworkDemos" */;
+			buildPhases = (
+				B63A8EB11F43EB320021ADEB /* Sources */,
+				B63A8EB21F43EB320021ADEB /* Frameworks */,
+				B63A8EB31F43EB320021ADEB /* Resources */,
+				B6A589CC1F43FFA500A57D95 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B63A8EE91F43F1420021ADEB /* PBXTargetDependency */,
+				B6A589D81F44003500A57D95 /* PBXTargetDependency */,
+				B6A58A0E1F440BE000A57D95 /* PBXTargetDependency */,
+				B6A58A361F441C9400A57D95 /* PBXTargetDependency */,
+				B6D1B0E31F4453A400D402C3 /* PBXTargetDependency */,
+				B6D1B11A1F44592400D402C3 /* PBXTargetDependency */,
+				B6D1B1761F4464F000D402C3 /* PBXTargetDependency */,
+				B6D1B1D61F454E8A00D402C3 /* PBXTargetDependency */,
+				B6D1B2151F4570EB00D402C3 /* PBXTargetDependency */,
+			);
+			name = FrameworkDemos;
+			productName = FrameworkDemos;
+			productReference = B63A8EB51F43EB320021ADEB /* FrameworkDemos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B63A8ED21F43EB750021ADEB /* StaticeLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B63A8ED91F43EB750021ADEB /* Build configuration list for PBXNativeTarget "StaticeLibrary" */;
+			buildPhases = (
+				B63A8ECF1F43EB750021ADEB /* Sources */,
+				B63A8ED01F43EB750021ADEB /* Frameworks */,
+				B63A8ED11F43EB750021ADEB /* CopyFiles */,
+				B63A8EE31F43EDF10021ADEB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StaticeLibrary;
+			productName = StaticeLibrary;
+			productReference = B63A8ED31F43EB750021ADEB /* libStaticeLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B6A589D11F44003500A57D95 /* DynamicFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6A589DB1F44003500A57D95 /* Build configuration list for PBXNativeTarget "DynamicFramework" */;
+			buildPhases = (
+				B6A589CD1F44003500A57D95 /* Sources */,
+				B6A589CE1F44003500A57D95 /* Frameworks */,
+				B6A589D01F44003500A57D95 /* Resources */,
+				B6A589F71F44056500A57D95 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicFramework;
+			productName = DynamicFramework;
+			productReference = B6A589D21F44003500A57D95 /* DynamicFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B6A58A071F440BE000A57D95 /* StaticFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6A58A111F440BE000A57D95 /* Build configuration list for PBXNativeTarget "StaticFramework" */;
+			buildPhases = (
+				B6A58A031F440BE000A57D95 /* Sources */,
+				B6A58A041F440BE000A57D95 /* Frameworks */,
+				B6A58A051F440BE000A57D95 /* Headers */,
+				B6A58A061F440BE000A57D95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StaticFramework;
+			productName = StaticFramework;
+			productReference = B6A58A081F440BE000A57D95 /* StaticFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B6A58A201F440D5800A57D95 /* NewBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6A58A241F440D5800A57D95 /* Build configuration list for PBXNativeTarget "NewBundle" */;
+			buildPhases = (
+				B6A58A1D1F440D5800A57D95 /* Sources */,
+				B6A58A1E1F440D5800A57D95 /* Frameworks */,
+				B6A58A1F1F440D5800A57D95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewBundle;
+			productName = NewBundle;
+			productReference = B6A58A211F440D5800A57D95 /* NewBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		B6A58A2F1F441C9400A57D95 /* DynamicWithStatic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6A58A391F441C9400A57D95 /* Build configuration list for PBXNativeTarget "DynamicWithStatic" */;
+			buildPhases = (
+				B6A58A2B1F441C9400A57D95 /* Sources */,
+				B6A58A2C1F441C9400A57D95 /* Frameworks */,
+				B6A58A2D1F441C9400A57D95 /* Headers */,
+				B6A58A2E1F441C9400A57D95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicWithStatic;
+			productName = DynamicWithStatic;
+			productReference = B6A58A301F441C9400A57D95 /* DynamicWithStatic.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B6D1B0DC1F4453A400D402C3 /* StaticSVProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D1B0E61F4453A400D402C3 /* Build configuration list for PBXNativeTarget "StaticSVProgressHUD" */;
+			buildPhases = (
+				B6D1B0D81F4453A400D402C3 /* Sources */,
+				B6D1B0D91F4453A400D402C3 /* Frameworks */,
+				B6D1B0DA1F4453A400D402C3 /* Headers */,
+				B6D1B0DB1F4453A400D402C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StaticSVProgressHUD;
+			productName = StaticSVProgressHUD;
+			productReference = B6D1B0DD1F4453A400D402C3 /* StaticSVProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B6D1B1131F44592400D402C3 /* DynamicSVProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D1B11D1F44592400D402C3 /* Build configuration list for PBXNativeTarget "DynamicSVProgressHUD" */;
+			buildPhases = (
+				B6D1B10F1F44592400D402C3 /* Sources */,
+				B6D1B1101F44592400D402C3 /* Frameworks */,
+				B6D1B1111F44592400D402C3 /* Headers */,
+				B6D1B1121F44592400D402C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicSVProgressHUD;
+			productName = DynamicSVProgressHUD;
+			productReference = B6D1B1141F44592400D402C3 /* DynamicSVProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B6D1B16F1F4464F000D402C3 /* DynamicWithDynamic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D1B1791F4464F000D402C3 /* Build configuration list for PBXNativeTarget "DynamicWithDynamic" */;
+			buildPhases = (
+				B6D1B16B1F4464F000D402C3 /* Sources */,
+				B6D1B16C1F4464F000D402C3 /* Frameworks */,
+				B6D1B16D1F4464F000D402C3 /* Headers */,
+				B6D1B16E1F4464F000D402C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicWithDynamic;
+			productName = DynamicWithDynamic;
+			productReference = B6D1B1701F4464F000D402C3 /* DynamicWithDynamic.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B6D1B1CF1F454E8A00D402C3 /* StaticWithStatic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D1B1D91F454E8A00D402C3 /* Build configuration list for PBXNativeTarget "StaticWithStatic" */;
+			buildPhases = (
+				B6D1B1CB1F454E8A00D402C3 /* Sources */,
+				B6D1B1CC1F454E8A00D402C3 /* Frameworks */,
+				B6D1B1CD1F454E8A00D402C3 /* Headers */,
+				B6D1B1CE1F454E8A00D402C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StaticWithStatic;
+			productName = StaticWithStatic;
+			productReference = B6D1B1D01F454E8A00D402C3 /* StaticWithStatic.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B6D1B20E1F4570EB00D402C3 /* StaticWithDynamic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D1B2181F4570EB00D402C3 /* Build configuration list for PBXNativeTarget "StaticWithDynamic" */;
+			buildPhases = (
+				B6D1B20A1F4570EB00D402C3 /* Sources */,
+				B6D1B20B1F4570EB00D402C3 /* Frameworks */,
+				B6D1B20C1F4570EB00D402C3 /* Headers */,
+				B6D1B20D1F4570EB00D402C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StaticWithDynamic;
+			productName = StaticWithDynamic;
+			productReference = B6D1B20F1F4570EB00D402C3 /* StaticWithDynamic.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B63A8EAD1F43EB320021ADEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Zachary Zhang";
+				TargetAttributes = {
+					B63A8EB41F43EB320021ADEB = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XX9M4Q6PP9;
+						ProvisioningStyle = Automatic;
+					};
+					B63A8ED21F43EB750021ADEB = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XX9M4Q6PP9;
+						ProvisioningStyle = Automatic;
+					};
+					B6A589D11F44003500A57D95 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XX9M4Q6PP9;
+						ProvisioningStyle = Automatic;
+					};
+					B6A58A071F440BE000A57D95 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XX9M4Q6PP9;
+						ProvisioningStyle = Automatic;
+					};
+					B6A58A201F440D5800A57D95 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XX9M4Q6PP9;
+						ProvisioningStyle = Automatic;
+					};
+					B6A58A2F1F441C9400A57D95 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XX9M4Q6PP9;
+						ProvisioningStyle = Automatic;
+					};
+					B6D1B0DC1F4453A400D402C3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XX9M4Q6PP9;
+						ProvisioningStyle = Automatic;
+					};
+					B6D1B1131F44592400D402C3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XX9M4Q6PP9;
+						ProvisioningStyle = Automatic;
+					};
+					B6D1B16F1F4464F000D402C3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XX9M4Q6PP9;
+						ProvisioningStyle = Automatic;
+					};
+					B6D1B1CF1F454E8A00D402C3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XX9M4Q6PP9;
+						ProvisioningStyle = Automatic;
+					};
+					B6D1B20E1F4570EB00D402C3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XX9M4Q6PP9;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B63A8EB01F43EB320021ADEB /* Build configuration list for PBXProject "FrameworkDemos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B63A8EAC1F43EB320021ADEB;
+			productRefGroup = B63A8EB61F43EB320021ADEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B63A8EB41F43EB320021ADEB /* FrameworkDemos */,
+				B63A8ED21F43EB750021ADEB /* StaticeLibrary */,
+				B6A589D11F44003500A57D95 /* DynamicFramework */,
+				B6A58A071F440BE000A57D95 /* StaticFramework */,
+				B6A58A201F440D5800A57D95 /* NewBundle */,
+				B6D1B0DC1F4453A400D402C3 /* StaticSVProgressHUD */,
+				B6D1B1131F44592400D402C3 /* DynamicSVProgressHUD */,
+				B6A58A2F1F441C9400A57D95 /* DynamicWithStatic */,
+				B6D1B16F1F4464F000D402C3 /* DynamicWithDynamic */,
+				B6D1B1CF1F454E8A00D402C3 /* StaticWithStatic */,
+				B6D1B20E1F4570EB00D402C3 /* StaticWithDynamic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B63A8EB31F43EB320021ADEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B63A8EC81F43EB320021ADEB /* LaunchScreen.storyboard in Resources */,
+				B63A8EC51F43EB320021ADEB /* Assets.xcassets in Resources */,
+				B63A8EC31F43EB320021ADEB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A589D01F44003500A57D95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A58A061F440BE000A57D95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A58A1F1F440D5800A57D95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A58A281F440D8300A57D95 /* author.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A58A2E1F441C9400A57D95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D1B1661F445F1900D402C3 /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D1B0DB1F4453A400D402C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D1B0FA1F44543E00D402C3 /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D1B1121F44592400D402C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D1B1311F44599F00D402C3 /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D1B16E1F4464F000D402C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D1B1CE1F454E8A00D402C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D1B20D1F4570EB00D402C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B63A8EB11F43EB320021ADEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B63A8EC01F43EB320021ADEB /* ViewController.m in Sources */,
+				B63A8EBD1F43EB320021ADEB /* AppDelegate.m in Sources */,
+				B63A8EBA1F43EB320021ADEB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B63A8ECF1F43EB750021ADEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B63A8EE21F43EDA50021ADEB /* PrintString.m in Sources */,
+				B63A8ED71F43EB750021ADEB /* StaticeLibrary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A589CD1F44003500A57D95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A589E11F44006B00A57D95 /* DFPrintString.m in Sources */,
+				B6A589E71F44010F00A57D95 /* PublicDFPrintString.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A58A031F440BE000A57D95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A58A1D1F440D5800A57D95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A58A2B1F441C9400A57D95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D1B13B1F445B1200D402C3 /* DWSShowPic.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D1B0D81F4453A400D402C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D1B0F21F44543600D402C3 /* SVIndefiniteAnimatedView.m in Sources */,
+				B6D1B0F41F44543600D402C3 /* SVProgressAnimatedView.m in Sources */,
+				B6D1B0F61F44543600D402C3 /* SVProgressHUD.m in Sources */,
+				B6D1B0FE1F4454A700D402C3 /* SSShowPic.m in Sources */,
+				B6D1B0F81F44543600D402C3 /* SVRadialGradientLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D1B10F1F44592400D402C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D1B1291F44599A00D402C3 /* SVIndefiniteAnimatedView.m in Sources */,
+				B6D1B1351F4459BD00D402C3 /* DSShowPic.m in Sources */,
+				B6D1B12B1F44599A00D402C3 /* SVProgressAnimatedView.m in Sources */,
+				B6D1B12D1F44599A00D402C3 /* SVProgressHUD.m in Sources */,
+				B6D1B12F1F44599A00D402C3 /* SVRadialGradientLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D1B16B1F4464F000D402C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D1B1801F44653100D402C3 /* DWDShowPic.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D1B1CB1F454E8A00D402C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D1B1E01F454EC700D402C3 /* SWSShowPic.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D1B20A1F4570EB00D402C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D1B21F1F4572AC00D402C3 /* SWDShowPic.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B63A8EE91F43F1420021ADEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B63A8ED21F43EB750021ADEB /* StaticeLibrary */;
+			targetProxy = B63A8EE81F43F1420021ADEB /* PBXContainerItemProxy */;
+		};
+		B6A589D81F44003500A57D95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6A589D11F44003500A57D95 /* DynamicFramework */;
+			targetProxy = B6A589D71F44003500A57D95 /* PBXContainerItemProxy */;
+		};
+		B6A58A0E1F440BE000A57D95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6A58A071F440BE000A57D95 /* StaticFramework */;
+			targetProxy = B6A58A0D1F440BE000A57D95 /* PBXContainerItemProxy */;
+		};
+		B6A58A361F441C9400A57D95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6A58A2F1F441C9400A57D95 /* DynamicWithStatic */;
+			targetProxy = B6A58A351F441C9400A57D95 /* PBXContainerItemProxy */;
+		};
+		B6D1B0E31F4453A400D402C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6D1B0DC1F4453A400D402C3 /* StaticSVProgressHUD */;
+			targetProxy = B6D1B0E21F4453A400D402C3 /* PBXContainerItemProxy */;
+		};
+		B6D1B11A1F44592400D402C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6D1B1131F44592400D402C3 /* DynamicSVProgressHUD */;
+			targetProxy = B6D1B1191F44592400D402C3 /* PBXContainerItemProxy */;
+		};
+		B6D1B1761F4464F000D402C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6D1B16F1F4464F000D402C3 /* DynamicWithDynamic */;
+			targetProxy = B6D1B1751F4464F000D402C3 /* PBXContainerItemProxy */;
+		};
+		B6D1B1D61F454E8A00D402C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6D1B1CF1F454E8A00D402C3 /* StaticWithStatic */;
+			targetProxy = B6D1B1D51F454E8A00D402C3 /* PBXContainerItemProxy */;
+		};
+		B6D1B2151F4570EB00D402C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6D1B20E1F4570EB00D402C3 /* StaticWithDynamic */;
+			targetProxy = B6D1B2141F4570EB00D402C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B63A8EC11F43EB320021ADEB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B63A8EC21F43EB320021ADEB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B63A8EC61F43EB320021ADEB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B63A8EC71F43EB320021ADEB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B63A8ECA1F43EB320021ADEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B63A8ECB1F43EB320021ADEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B63A8ECD1F43EB320021ADEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XX9M4Q6PP9;
+				INFOPLIST_FILE = FrameworkDemos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zachary.FrameworkDemos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B63A8ECE1F43EB320021ADEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XX9M4Q6PP9;
+				INFOPLIST_FILE = FrameworkDemos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zachary.FrameworkDemos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B63A8EDA1F43EB750021ADEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = XX9M4Q6PP9;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B63A8EDB1F43EB750021ADEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = XX9M4Q6PP9;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B6A589DC1F44003500A57D95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XX9M4Q6PP9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DynamicFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zachary.DynamicFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B6A589DD1F44003500A57D95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XX9M4Q6PP9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DynamicFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zachary.DynamicFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B6A58A121F440BE000A57D95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XX9M4Q6PP9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = StaticFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = zachary.StaticFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B6A58A131F440BE000A57D95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XX9M4Q6PP9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = StaticFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = zachary.StaticFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B6A58A251F440D5800A57D95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XX9M4Q6PP9;
+				INFOPLIST_FILE = NewBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = zachary.NewBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos10.3;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		B6A58A261F440D5800A57D95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XX9M4Q6PP9;
+				INFOPLIST_FILE = NewBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = zachary.NewBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos10.3;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		B6A58A3A1F441C9400A57D95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XX9M4Q6PP9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DynamicWithStatic/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zachary.DynamicWithStatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B6A58A3B1F441C9400A57D95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XX9M4Q6PP9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DynamicWithStatic/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zachary.DynamicWithStatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B6D1B0E71F4453A400D402C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XX9M4Q6PP9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = StaticSVProgressHUD/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = zachary.StaticSVProgressHUD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B6D1B0E81F4453A400D402C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XX9M4Q6PP9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = StaticSVProgressHUD/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = zachary.StaticSVProgressHUD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B6D1B11E1F44592400D402C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XX9M4Q6PP9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DynamicSVProgressHUD/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zachary.DynamicSVProgressHUD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B6D1B11F1F44592400D402C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XX9M4Q6PP9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DynamicSVProgressHUD/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zachary.DynamicSVProgressHUD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B6D1B17A1F4464F000D402C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XX9M4Q6PP9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DynamicWithDynamic/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zachary.DynamicWithDynamic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B6D1B17B1F4464F000D402C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XX9M4Q6PP9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DynamicWithDynamic/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zachary.DynamicWithDynamic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B6D1B1DA1F454E8A00D402C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XX9M4Q6PP9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = StaticWithStatic/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = zachary.StaticWithStatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B6D1B1DB1F454E8A00D402C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XX9M4Q6PP9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = StaticWithStatic/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = zachary.StaticWithStatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B6D1B2191F4570EB00D402C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XX9M4Q6PP9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = StaticWithDynamic/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = zachary.StaticWithDynamic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B6D1B21A1F4570EB00D402C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XX9M4Q6PP9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = StaticWithDynamic/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = zachary.StaticWithDynamic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B63A8EB01F43EB320021ADEB /* Build configuration list for PBXProject "FrameworkDemos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B63A8ECA1F43EB320021ADEB /* Debug */,
+				B63A8ECB1F43EB320021ADEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B63A8ECC1F43EB320021ADEB /* Build configuration list for PBXNativeTarget "FrameworkDemos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B63A8ECD1F43EB320021ADEB /* Debug */,
+				B63A8ECE1F43EB320021ADEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B63A8ED91F43EB750021ADEB /* Build configuration list for PBXNativeTarget "StaticeLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B63A8EDA1F43EB750021ADEB /* Debug */,
+				B63A8EDB1F43EB750021ADEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6A589DB1F44003500A57D95 /* Build configuration list for PBXNativeTarget "DynamicFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6A589DC1F44003500A57D95 /* Debug */,
+				B6A589DD1F44003500A57D95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6A58A111F440BE000A57D95 /* Build configuration list for PBXNativeTarget "StaticFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6A58A121F440BE000A57D95 /* Debug */,
+				B6A58A131F440BE000A57D95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6A58A241F440D5800A57D95 /* Build configuration list for PBXNativeTarget "NewBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6A58A251F440D5800A57D95 /* Debug */,
+				B6A58A261F440D5800A57D95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6A58A391F441C9400A57D95 /* Build configuration list for PBXNativeTarget "DynamicWithStatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6A58A3A1F441C9400A57D95 /* Debug */,
+				B6A58A3B1F441C9400A57D95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6D1B0E61F4453A400D402C3 /* Build configuration list for PBXNativeTarget "StaticSVProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D1B0E71F4453A400D402C3 /* Debug */,
+				B6D1B0E81F4453A400D402C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B6D1B11D1F44592400D402C3 /* Build configuration list for PBXNativeTarget "DynamicSVProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D1B11E1F44592400D402C3 /* Debug */,
+				B6D1B11F1F44592400D402C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B6D1B1791F4464F000D402C3 /* Build configuration list for PBXNativeTarget "DynamicWithDynamic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D1B17A1F4464F000D402C3 /* Debug */,
+				B6D1B17B1F4464F000D402C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B6D1B1D91F454E8A00D402C3 /* Build configuration list for PBXNativeTarget "StaticWithStatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D1B1DA1F454E8A00D402C3 /* Debug */,
+				B6D1B1DB1F454E8A00D402C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B6D1B2181F4570EB00D402C3 /* Build configuration list for PBXNativeTarget "StaticWithDynamic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D1B2191F4570EB00D402C3 /* Debug */,
+				B6D1B21A1F4570EB00D402C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B63A8EAD1F43EB320021ADEB /* Project object */;
+}
