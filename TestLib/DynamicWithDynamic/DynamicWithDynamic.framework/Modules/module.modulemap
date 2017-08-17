@@ -1,0 +1,6 @@
+framework module DynamicWithDynamic {
+  umbrella header "DynamicWithDynamic.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module DynamicSVProgressHUD {
+  umbrella header "DynamicSVProgressHUD.h"
+
+  export *
+  module * { export * }
+}

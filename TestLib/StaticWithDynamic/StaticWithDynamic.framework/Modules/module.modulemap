@@ -1,0 +1,6 @@
+framework module StaticWithDynamic {
+  umbrella header "StaticWithDynamic.h"
+
+  export *
+  module * { export * }
+}

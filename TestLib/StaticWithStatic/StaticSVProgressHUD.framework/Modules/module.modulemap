@@ -1,0 +1,6 @@
+framework module StaticSVProgressHUD {
+  umbrella header "StaticSVProgressHUD.h"
+
+  export *
+  module * { export * }
+}

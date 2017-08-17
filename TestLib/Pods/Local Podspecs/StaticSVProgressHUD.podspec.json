@@ -1,0 +1,27 @@
+{
+  "name": "StaticSVProgressHUD",
+  "version": "0.1.0",
+  "summary": "A short description of StaticWithCocoapods.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhang759740844",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Zachary": "759740844@qq.com"
+  },
+  "source": {
+    "git": "/Users/zachary/Desktop/StaticWithCocoapods",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "**/*",
+  "resources": [
+    "SVProgressHUD.bundle"
+  ],
+  "public_header_files": "**/*.h",
+  "frameworks": "QuartzCore"
+}

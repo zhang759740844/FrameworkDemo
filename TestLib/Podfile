@@ -1,0 +1,16 @@
+#use_frameworks!
+target ‘DynamicWithStatic’ do
+    pod 'StaticSVProgressHUD', :path => './StaticWithStatic/MyStaticSVProgressHUD'
+end
+
+target ‘DynamicWithDynamic’ do
+    pod 'DynamicSVProgressHUD', :path => './DynamicWithDynamic/MyDynamicSVProgressHUD'
+end
+
+target ‘StaticWithStatic’ do
+    pod 'StaticSVProgressHUD', :path => './StaticWithStatic/MyStaticSVProgressHUD'
+end
+
+target ‘StaticWithDynamic’ do
+    pod 'DynamicSVProgressHUD', :path => './DynamicWithDynamic/MyDynamicSVProgressHUD'
+end

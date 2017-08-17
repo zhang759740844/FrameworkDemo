@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>DynamicWithDynamic.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>DynamicWithStatic.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>StaticWithDynamic.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>StaticWithStatic.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>TestLib.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>B6D1AFF81F441F1600D402C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B6D1B1461F445DC800D402C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B6D1B1841F44666400D402C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B6D1B1E61F454FF100D402C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B6D1B2231F45739B00D402C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

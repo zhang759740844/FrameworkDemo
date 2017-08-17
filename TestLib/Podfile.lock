@@ -1,0 +1,21 @@
+PODS:
+  - DynamicSVProgressHUD (0.1.0)
+  - StaticSVProgressHUD (0.1.0)
+
+DEPENDENCIES:
+  - DynamicSVProgressHUD (from `./DynamicWithDynamic/MyDynamicSVProgressHUD`)
+  - StaticSVProgressHUD (from `./StaticWithStatic/MyStaticSVProgressHUD`)
+
+EXTERNAL SOURCES:
+  DynamicSVProgressHUD:
+    :path: "./DynamicWithDynamic/MyDynamicSVProgressHUD"
+  StaticSVProgressHUD:
+    :path: "./StaticWithStatic/MyStaticSVProgressHUD"
+
+SPEC CHECKSUMS:
+  DynamicSVProgressHUD: 76c7944a6c05ec0c3c642cd302a62ecff5f4a0c9
+  StaticSVProgressHUD: 8844e0492086ddc9f8ffe02f60b1c31d6f02497d
+
+PODFILE CHECKSUM: a13f75782b6da47554e89a2587c256b85dccdad2
+
+COCOAPODS: 1.2.1
